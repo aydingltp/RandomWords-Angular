@@ -213,7 +213,7 @@ input.input100 {
 
 /*---------------------------------------------*/
 .m2-txt1 {
-  font-family: PlayfairDisplay-Regular;
+  /*font-family: PlayfairDisplay-Regular;*/
   font-size: 30px;
   color: #fff;
   line-height: 1.2;

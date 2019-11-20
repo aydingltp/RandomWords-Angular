@@ -29,7 +29,6 @@ export class AppComponent {
     return this.http.get<Value>(this.path2).subscribe((response: Value) => this.veriler = {
       sayac : response['0'],
       gelenDeger : response['1'],
-      //this.veriler = response;
     },  (err) => {
       console.error('hata!');
     });
