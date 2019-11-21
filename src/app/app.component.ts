@@ -15,18 +15,15 @@ export class AppComponent {
    */
   constructor(private http: HttpClient) { }
   veriler: Value;
-  veri1 = 1110;
-  veri2 = 'aydin';
 
-  path2 = 'https://localhost:44385/api/tesaduf';
-  path = '${https://localhost:44385/api/tesaduf}';
+  path = 'https://localhost:44385/api/tesaduf';
   sayac = 0;
   public deneme = 0;
 
 
 
   public getValues() {
-    return this.http.get<Value>(this.path2).subscribe((response: Value) => this.veriler = {
+    return this.http.get<Value>(this.path).subscribe((response: Value) => this.veriler = {
       sayac : response['0'],
       gelenDeger : response['1'],
     },  (err) => {
